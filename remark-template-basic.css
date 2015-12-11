@@ -1,0 +1,206 @@
+/* Basic theme for remark slides */
+
+* {
+    .box-sizing(border-box);
+}
+*:before,
+*:after {
+    .box-sizing(border-box);
+}
+
+html {
+    font-size: 100%;
+    font-family: "Source Han Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Han Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #555555;
+    background-color: #FFFFFF;
+}
+
+a {
+    color: #00989e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover, a:focus {
+    color: #00989e;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #00989e;
+    outline-offset: 0;
+    background-color: #00989e;
+    color: #FFF;
+    text-decoration: none;
+}
+
+ol {
+    padding: 0 0 0 1em;
+    margin: 1em 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 1em;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 90%;
+    max-width: 90%;
+    height: auto\9;
+    width: auto\9;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+hr {
+    height: 0;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0.5em 0 0.5em;
+}
+
+b, strong {
+    font-weight: 500;
+    font-weight: bold;
+    color: #006367;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #cccccc;
+}
+
+th, td {
+    padding: 5px;
+    font-size: 14px;
+}
+
+blockquote {
+    border-left: 5px solid #cccccc;
+    padding-left: 1em;
+    margin: 1em -1em;
+    font-style: italic;
+    color: #999999;
+}
+
+.remark-slide-number {
+    /*display: none;*/
+    font-size: 12px;
+}
+
+.remark-slide {
+    display: table;
+}
+
+.remark-slide-content {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 4em;
+    font-size: 24px;
+}
+
+.remark-slide-content h1 {
+    font-size: 56px;
+    color: #00989e;
+}
+
+.remark-slide-content h2 {
+    font-size: 48px;
+    color: #00989e;
+}
+
+.remark-slide-content h3 {
+    font-size: 30px;
+    color: #00989e;
+}
+
+.remark-slide-content h4 {
+    font-size: 26px;
+    color: #00989e;
+}
+
+.remark-slide-content h5 {
+    font-size: 20px;
+    color: #00989e;
+}
+
+.remark-slide-content h6 {
+    font-size: 14px;
+    color: #00989e;
+}
+
+.remark-slide-content > :first-child {
+    margin-top: 0;
+}
+
+.remark-slide-content > :last-child {
+    margin-bottom: 0;
+}
+
+.remark-code-line {
+	  /*overflow: hidden !important;*/
+    overflow: auto;
+    word-wrap: break-word;
+    font-family: 'Ubuntu Mono';
+}
+
+.footnote {
+    min-height: 100px;
+    height: 100px;
+}
+
+.author {
+    font-size: 11px;
+    vertical-align: bottom;
+}
+
+.ref {
+    font-size: 9px;
+}
+
+img[alt=tf_img_100] {
+    max-height: 100px;
+}
+
+img[alt=tf_img_200] {
+    max-height: 200px;
+}
+
+img[alt=tf_img_250] {
+    max-height: 250px;
+}
+
+img[alt=tf_img_300] {
+    max-height: 300px;
+}
+
+img[alt=tf_img_350] {
+    max-height: 350px;
+}
+
+img[alt=tf_img_400] {
+    max-height: 400px;
+}
+
+img[alt=tf_img_500] {
+    max-height: 500px;
+}
