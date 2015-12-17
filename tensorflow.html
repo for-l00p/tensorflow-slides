@@ -222,7 +222,7 @@ class: center, middle, cover
 # TensorFlow
 
 <br><br><br>
-.footnote[.author.right[Jake S. Choi ([shchoi@diotek.com](shchoi@diotek.com))]]
+.footnote[.author.right[Jake S. Choi ([shchoi@diotek.com](shchoi@diotek.com))]] .ref.author.right[2015.12.17]
 
 ---
 
@@ -295,7 +295,7 @@ name: distbelief
 
 ---
 ## DistBelief
-#### Model parallelism benchmarks
+#### Data parallelism benchmarks
 * 실험 결과
 ![](images/tf_distbelief_02.png)
 .ref.right[ [[4]](#ref) Large Scale Distributed Deep Networks]
@@ -549,7 +549,7 @@ tf.scalar_summary("loss", cost)
 ---
 ## TensorFlow - 돌아와서
 * DNN 뿐 아니라 다른 machine learing등 대규모 matrix 연산이 필요한 곳에 적용이 가능함
-* 장비 / 하드웨어에 대한 이해가 필요 없음
+* 하드웨어에 대한 이해가 필요 없음
 * Deep learning을 위한 다양한 최적화된 함수를 지원
 * 자동 미분을 계산하여 backward pass에 대한 코드 작성이 불필요함
 * 다양한 모델과 결합이 쉬움
@@ -641,7 +641,7 @@ b_conv1 = bias_variable([32])
 h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)
 h_pool1 = max_pool_2x2(h_conv1)
 
-# 5x5 patch size of 32 kernel, 64 features
+# 5x5 patch size of 32 channel, 64 features
 W_conv2 = weight_variable([5, 5, 32, 64])
 b_conv2 = bias_variable([64])
 h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2)
